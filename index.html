@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,28 +11,42 @@
     <script src="https://kit.fontawesome.com/d5f40216e0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" type= "image/png"href="img/myIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/myIcon.png">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav id="navbar"></nav>
-    <div id="navbar__logo">
-        <i class="fab fa-diasopra"></i>
-        <a href="#">Taewook</a>
+    <nav id="navbar">
+        <div id="navbar__logo">
+            <img src="img/myIcon.png" alt="cannot find the image">
+            <a href="#">Taewook</a>
+        </div>
+        <div>
+    </nav>
+    <ul class="navbar__menu">
+        <li class="navbar__menu__item"></li>
+        <li class="navbar__menu__item"></li>
+        <li class="navbar__menu__item"></li>
+        <li class="navbar__menu__item"></li>
+        <li class="navbar__menu__item"></li>
+        <li class="navbar__menu__item"></li>
+    </ul>
     </div>
-    <div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item"></li>
-            <li class="navbar__menu__item"></li>
-            <li class="navbar__menu__item"></li>
-            <li class="navbar__menu__item"></li>
-            <li class="navbar__menu__item"></li>
-            <li class="navbar__menu__item"></li>
-        </ul>
-    </div>
+    <!-- Home -->
+    <section id="home">
+        <img 
+            src="img/증명사진.jpg" 
+            alt="Sam's profile photo" 
+            class="home__avatar"
+        />
+        <h1 class="home__title">Hello, <br/> I'm Dream Coder</h1>
+        <h2 class="home__decription">A Software Engineer currently residing in Deajeon, Korea.</h2>
+        <button class="home__contact">CONTACT ME</button>
+    </section>
     <!-- About -->
     <section id="about"></section>
     <!-- Skills -->
@@ -44,4 +59,5 @@
     <section id="contact"></section>
 
 </body>
+
 </html>
