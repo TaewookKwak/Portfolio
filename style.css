@@ -32,3 +32,32 @@
 * {
   box-sizing: border-box;
 }
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color--black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color--black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-style: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color--black);
+  margin: 8px 0px;
+}
+
+p {
+  font-style: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color--black);
+  margin: 4px 0px;
+}
