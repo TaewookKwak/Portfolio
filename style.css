@@ -51,6 +51,13 @@ ul {
   padding: 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -112,4 +119,32 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color--blue);
+}
+
+/* Home */
+#home {
+  background: url("img/곽태욱's\ 포토폴리오.png") center / cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid var(--color--white);
+}
+.home__title,
+.home__decription {
+  color: var(--color--white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color--white);
+  border: solid 2px var(--color--white);
+  border-radius: var(--size-border-radius);
+  padding: 8px 12px;
+  margin: 24px;
 }
