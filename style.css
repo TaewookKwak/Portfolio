@@ -2,7 +2,7 @@
 :root {
   /* Color */
   --color--white: #ffffff;
-  --color--white: #e1e8f2;
+  --color--light-white: #e1e8f2;
   --color--blue: #8188c9;
   --color--dark-blue: #0d2d5c;
   --color--sky: #7aabbf;
@@ -384,8 +384,10 @@ p {
   background-color: wheat;
 }
 
+/* Testimonial */
+
 #testimonials {
-  background-color: var(--color--light-green);
+  background-color: var(--color--light-white);
 }
 
 .testimonials {
@@ -422,4 +424,39 @@ p {
 
 .testimonial__speech-bubble a {
   color: var(--color--light-red);
+}
+
+/* Contact */
+
+#contact {
+  background-color: var(--color--dark-blue);
+}
+
+.contact__email,
+.contact__rights,
+.contact__title {
+  color: var(--color--white);
+}
+
+.contact__title {
+  margin: 40px;
+}
+
+.contact__email {
+  margin: 20px;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color--light-sky);
+  transition: all var(--animation-duration) ease-out;
+}
+
+.contact__rights {
+  margin: 10px;
 }
