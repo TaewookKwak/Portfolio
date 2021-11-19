@@ -98,12 +98,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color--dark-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color--white);
-  padding: 16px;
+  padding: 0px 16px;
+  width: 100%;
+  transition: all var(--animation-duration) ease-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color--dark-blue);
+  padding: 0px 16px;
 }
 
 .navbar__logo {
@@ -142,7 +150,7 @@ p {
 /* Home */
 #home {
   background: url("img/곽태욱's\ 포토폴리오.png") center / cover no-repeat;
-  padding: 40px;
+  padding: 130px 40px;
   text-align: center;
 }
 
@@ -487,6 +495,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__logo {
+    padding: 18px 0px;
   }
 
   .about__majors {
