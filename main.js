@@ -21,7 +21,7 @@ navbarMenu.addEventListener('click', (event) =>{
     if(link == null){
         return;
     }
-    console.log(event.target.dataset.link);
+    //console.log(event.target.dataset.link);
     scrollIntoView(link);
 })
 
@@ -35,7 +35,7 @@ homeContactBtn.addEventListener('click', (event)=> {
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-    console.log(1 - window.scrollY / homeHeight);
+    //console.log(1 - window.scrollY / homeHeight);
     home.style.opacity = 1 - window.scrollY / homeHeight;
 })
 
@@ -50,6 +50,30 @@ document.addEventListener('scroll', () =>{
     }else{
         ArrowUpBtn.classList.remove('visible')
     }
+})
+
+// Projects filtering and animation
+const workBtnContainer = document.querySelector('.work__catagories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(null == filter){
+        return;
+    }
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach((project) => {
+            //console.log(project.dataset.type);
+             if(filter === '*' || filter === project.dataset.type){
+                 project.classList.remove('invisible');
+             } else {
+                 project.classList.add('invisible');
+             }
+         });
+        projectContainer.classList.remove('anim-out');
+    },300)
+    
 })
 
 function scrollIntoView(selector){
