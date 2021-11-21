@@ -61,6 +61,13 @@ workBtnContainer.addEventListener('click', (e) => {
     if(null == filter){
         return;
     }
+    
+    const active = document.querySelector('.catagory__btn.selected');
+    active.classList.remove('selected');
+    const target = 
+        e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode; 
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(()=>{
         projects.forEach((project) => {
@@ -70,11 +77,14 @@ workBtnContainer.addEventListener('click', (e) => {
              } else {
                  project.classList.add('invisible');
              }
-         });
+         })
         projectContainer.classList.remove('anim-out');
     },300)
     
 })
+
+//Remove selection from the previous item and select the new one
+
 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
