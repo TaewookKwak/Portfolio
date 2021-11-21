@@ -11,6 +11,7 @@ document.addEventListener('scroll', () =>{
     }else{
         navbar.classList.remove('navbar--dark')
     }
+    navbarMenu.classList.remove('visible');
 })
 
 // Handle scrolling when tapping on the navbar menu
@@ -23,6 +24,7 @@ navbarMenu.addEventListener('click', (event) =>{
     }
     //console.log(event.target.dataset.link);
     scrollIntoView(link);
+    
 })
 
 // Handle click on "contact me" button on home
@@ -85,6 +87,12 @@ workBtnContainer.addEventListener('click', (e) => {
 
 //Remove selection from the previous item and select the new one
 
+
+// activate Navbar toggle button 
+const hamburgerBtn = document.querySelector('.navbar__toggle_btn');
+hamburgerBtn.addEventListener('click',(e) => {
+    navbarMenu.classList.toggle('visible');
+})
 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
