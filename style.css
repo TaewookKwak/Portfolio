@@ -23,7 +23,7 @@
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 18px;
+  --font-regular: 20px;
   --font-small: 16px;
   --font-micro: 14px;
 
@@ -129,7 +129,10 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-  border: 1px solid transparent;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
 }
 
 .navbar__menu__item:hover {
@@ -179,10 +182,15 @@ p {
   margin: 24px;
 }
 
+.home__contact:hover {
+  background-color: var(--color--dark-blue);
+}
+
 /* Section common */
 .section {
   text-align: center;
-  padding: 50px;
+  padding: 16px;
+  padding-top: 70px;
   margin: auto;
 }
 
@@ -311,15 +319,16 @@ p {
 
 /* Work */
 .work__catagories {
-  margin: 40px;
+  margin: 16px 40px;
 }
 
 .catagory__btn {
   border: 1px solid var(--color--light-white);
   border-radius: var(--size-border-radius);
-  font-size: var(--font-regular);
-  padding: 8px 48px;
+  font-size: var(--font-small);
+  padding: 8px 30px;
   margin: 5px 5px;
+  position: relative;
 }
 
 .catagory__btn.active,
@@ -341,10 +350,10 @@ p {
   width: 24px;
   height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   line-height: 24px;
   top: -20px;
-  left: 4px;
+  right: 1px;
   opacity: 0;
   transition: all var(--animation-duration);
 }
@@ -514,6 +523,15 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font Size */
+    --font-large: 33px;
+    --font-medium: 22px;
+    --font-regular: 17px;
+    --font-small: 16px;
+    --font-micro: 14px;
+  }
+
   .navbar__toggle_btn {
     display: block;
   }
@@ -544,6 +562,7 @@ p {
 
   .about__majors {
     flex-direction: column;
+    margin: 30px 0;
   }
 
   .major {
@@ -554,12 +573,41 @@ p {
     flex-direction: column;
   }
 
+  .catagory__btn {
+    width: 100%;
+  }
+  .catagory__count {
+    right: 60px;
+    transform: translateY(20%);
+  }
+
   .project {
     flex-grow: 1;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
+  #uparrow__btn {
+    font-size: 35px;
+    right: 10px;
+    bottom: 10px;
   }
 }
