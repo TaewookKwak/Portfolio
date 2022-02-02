@@ -518,9 +518,8 @@ li {
 
 .project_title {
   position: absolute;
-  top: 2em;
+  bottom: 0px;
   left: 50%;
-  transform: translate(-50%);
 }
 
 .projects_container:hover .web_link {

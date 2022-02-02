@@ -518,7 +518,7 @@ li {
 
 .project_title {
   position: absolute;
-  top: 2em;
+  top: 1em;
   left: 50%;
   transform: translate(-50%);
 }
