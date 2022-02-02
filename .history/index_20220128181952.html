@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for a excellent software engineer Sam"
+    />
+    <meta name="author" content="Sam" />
+    <script
+      src="https://kit.fontawesome.com/d5f40216e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/myIcon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-star-of-david"></i>
+        <a href="#">Sam</a>
+      </div>
+      <div class="navbar__menu">
+        <ul>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#testimonials">
+            Testimonials
+          </li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
+
+      <!-- Toggle Button -->
+      <button class="navbar__toggle_btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <div class="home__avatar">
+          <h1 class="home__title">
+            Taewook Kwak
+          </h1>
+          <h2 class="home__decription">
+            Junior Front-End Engineer
+          </h2>
+          <button class="home__contact" data-link="#contact">CONTACT ME</button>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me 🙋‍♂️</h1>
+      <h2 class="title>Experience</h2>
+      <div class="about__common_container">
+        <div class="fact__title">
+          <div class="fact__title_container">
+            <i class="fas fa-graduation-cap"></i>
+            <p class="fact__title_header">학력사항</p>
+          </div>
+        </div>
+        <div class="fact__details">
+          <div class="fact__details_container">
+            <div class="detail">
+              <img
+                class="logo"
+                src="/img/job/충북반도체고등학교_icon.png"
+                alt=""
+              />
+              <div class="explanation">
+                <p class="explanation__title">반도체과</p>
+                <p class="explanation__sub">2013</p>
+              </div>
+            </div>
+            <div class="fact__details_container">
+              <div class="detail">
+                <img class="logo" src="/img/job/Seneca.png" alt="" />
+                <div class="explanation">
+                  <p class="explanation__title">전자공학과</p>
+                  <p class="explanation__sub">2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__common_container">
+        <div class="fact__title">
+          <div class="fact__title_container">
+            <i class="fas fa-briefcase"></i>
+            <p class="fact__title_header">경력사항</p>
+          </div>
+        </div>
+        <div class="fact__details">
+          <div class="fact__details_container">
+            <div class="detail">
+              <img class="logo" src="/img/job/아이씨디_icon.png" alt="" />
+              <div class="explanation">
+                <p class="explanation__title">생산관리/자재</p>
+                <p class="explanation__sub">2013 ~ 2016 (3년)</p>
+              </div>
+            </div>
+            <div class="fact__details_container">
+              <div class="detail">
+                <div class="logo" alt="">레이토피아</div>
+                <div class="explanation">
+                  <p class="explanation__title">확산</p>
+                  <p class="explanation__sub">2016 ~ 2018 (2년)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__common_container">
+        <div class="fact__title">
+          <div class="fact__title_container">
+            <i class="fas fa-award"></i>
+            <p class="fact__title_header">수상 및 성적</p>
+          </div>
+        </div>
+        <div class="fact__details">
+          <div class="fact__details_container">
+            <div class="detail">
+              <img class="logo" src="/img/job/Quest_icon.png" alt="" />
+              <div class="explanation">
+                <p class="explanation__title">Quest Language Studies</p>
+                <p class="explanation__sub">Top of the class</p>
+              </div>
+            </div>
+            <div class="fact__details_container">
+              <div class="detail">
+                <img class="logo" src="/img/job/Seneca.png" alt="" />
+                <div class="explanation">
+                  <p class="explanation__title">
+                    President Honour List (3 times)
+                  </p>
+                  <p class="explanation__sub">2020 ~ 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="fact__details_container">
+              <div class="detail">
+                <img class="logo" src="/img/job/Seneca.png" alt="" />
+                <div class="explanation">
+                  <p class="explanation__title">Grade</p>
+                  <p class="explanation__sub">4.0 / 4.0 GPS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__common_container">
+        <div class="fact__title">
+          <div class="fact__title_container">
+            <i class="fas fa-language"></i>
+            <p class="fact__title_header">언어</p>
+          </div>
+        </div>
+        <div class="fact__details">
+          <div class="fact__details_container">
+            <div class="detail">
+              <div class="explanation">
+                <p class="explanation__title">Enlish</p>
+                <p class="explanation__sub">Business Communication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills💻</h1>
+
+        <h2 class="title">Attributes</h2>
+        <div class="Attributes">
+          <div class="Attribute__container">
+            <i class="fas fa-fighter-jet"></i>
+            <p class="Attribute">새로운 것을 빠르게 배우는 편</p>
+          </div>
+          <div class="Attribute__container">
+            <i class="fas fa-running"></i>
+            <p class="Attribute">그룹 프로젝트 안에서 빠른 스타터</p>
+          </div>
+          <div class="Attribute__container">
+            <i class="fas fa-people-carry"></i>
+            <p class="Attribute">그룹 프로젝트 안에서 좋은 커뮤니케이션</p>
+          </div>
+          <div class="Attribute__container">
+            <i class="fas fa-lightbulb"></i>
+            <p class="Attribute">논리적인 접근으로 와이프 피곤하게 만들기</p>
+          </div>
+        </div>
+
+        <h2>Stacks</h2>
+        <div></div>
+
+        <h2>Tools</h2>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__catagories">
+        <button class="catagory__btn selected" data-filter="*">
+          All
+          <span class="catagory__count">8</span>
+        </button>
+        <button class="catagory__btn" data-filter="front-end">
+          Front-end
+          <span class="catagory__count">3</span>
+        </button>
+        <button class="catagory__btn" data-filter="back-end">
+          Back-end
+          <span class="catagory__count">3</span>
+        </button>
+        <button class="catagory__btn" data-filter="mobile">
+          Mobile
+          <span class="catagory__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <img src="img/projects/1.jfif" alt="1" class="project__img" ">
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <img src="img/projects/2.jfif" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <img src="img/projects/3.jpg" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="back-end"
+        >
+          <img src="img/projects/1.jfif" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="back-end"
+        >
+          <img src="img/projects/4.jfif" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="back-end"
+        >
+          <img src="img/projects/5.jpg" alt="1" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="mobile"
+        >
+          <img src="img/projects/6.jpg" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/TaewookKwak/Html-Css-JavaScript-Practice.git"
+          class="project"
+          target="blank"
+          data-type="mobile"
+        >
+          <img src="img/projects/8.jfif" alt="1" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="section__container">
+          <div class="testimonial">
+            <img
+              src="img/testimonials/sam.jpg"
+              alt=""
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique facilis error unde sequi quibusdam assumenda cum quo
+                modi sapiente. At ratione aspernatur suscipit, iure minus
+                officiis asperiores quis vel deserunt?
+              </p>
+              <p class="name"><a href="">Sam</a></p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique facilis error unde sequi quibusdam assumenda cum quo
+                modi sapiente. At ratione aspernatur suscipit, iure minus
+                officiis asperiores quis vel deserunt?
+              </p>
+              <p class="name"><a href="">Sam</a></p>
+            </div>
+            <img
+              src="img/testimonials/sam.jpg"
+              alt=""
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">rhkrxodnr@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/TaewookKwak" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2021 Taewook Kwak's Portfolio All Rights Reserved
+      </p>
+    </section>
+    <!-- Up arrow -->
+    <button id="uparrow__btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </button>
+  </body>
+</html>
